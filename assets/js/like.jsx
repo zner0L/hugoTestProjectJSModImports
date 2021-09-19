@@ -1,6 +1,7 @@
 // Note: We're using the CDN in "production".
 import * as React from 'react'
 import * as ReactDOM from 'react-dom';
+import { AwesomeButton } from "react-awesome-button";
 
 // A simple React JSX component.
 class LikeButton extends React.Component {
@@ -15,9 +16,9 @@ class LikeButton extends React.Component {
       }
   
       return (
-        <button onClick={() => this.setState({ liked: true }) }>
+        <AwesomeButton onClick={() => this.setState({ liked: true }) }>
           Like
-        </button>
+        </AwesomeButton>
       );
     }
   }
